@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Economizaê — Grupo VIP de Ofertas e Cupons no WhatsApp</title>
+  <meta name="description" content="Entre grátis no grupo VIP do Economizaê e receba todos os dias as melhores ofertas, achadinhos e cupons da Shopee, Mercado Livre e Amazon direto no seu WhatsApp ou Telegram." />
+  <meta name="theme-color" content="#050f2c" />
+
+  <!-- Open Graph / WhatsApp / Facebook / Instagram -->
+  <link rel="canonical" href="https://economizaeofertas.com.br/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://economizaeofertas.com.br/" />
+  <meta property="og:site_name" content="Economizaê Ofertas" />
+  <meta property="og:title" content="Economizaê — As Melhores Ofertas e Cupons no Seu WhatsApp!" />
+  <meta property="og:description" content="Grupo 100% gratuito e silencioso com achadinhos e descontos reais da Shopee, Mercado Livre e Amazon." />
+  <meta property="og:image" content="https://economizaeofertas.com.br/assets/og-share.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Economizaê — Grupo VIP de Ofertas e Cupons" />
+  <meta name="twitter:description" content="Economia de verdade pra você! Entre grátis no WhatsApp ou Telegram." />
+  <meta name="twitter:image" content="https://economizaeofertas.com.br/assets/og-share.png" />
+
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/logo-economizae.png" />
+
+  <!-- Google Fonts (carregamento rápido com fallback instantâneo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+  <!-- Faixa Ao Vivo (horário real de Brasília) -->
+  <div class="top-ribbon" role="status" aria-live="polite">
+    <div class="top-ribbon__inner">
+      <span id="liveStatusDot" class="pulse-dot" aria-hidden="true"></span>
+      <span id="liveStatusText">Grupo ativo agora! Ofertas e cupons saindo hoje no WhatsApp e Telegram.</span>
+    </div>
+  </div>
+
+  <!-- HERO PRINCIPAL -->
+  <header class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <div class="hero__brand">
+          <div class="hero__logo-wrap">
+            <img
+              src="assets/logo-economizae.png"
+              alt="Logo Economizaê — Achadinhos e Ofertas"
+              class="hero__logo"
+              width="164"
+              height="164"
+              fetchpriority="high"
+            />
+          </div>
+          <span class="eyebrow">🔥 100% Grátis • Sem Spam • Saia Quando Quiser</span>
+        </div>
+
+        <h1 class="hero__title">
+          Receba as Melhores <span class="accent-gold">Ofertas e Cupons</span> Direto no Seu WhatsApp!
+        </h1>
+
+        <p class="hero__subtitle">
+          Garimpamos diariamente descontos reais, ofertas relâmpago e cupons da
+          <strong>Shopee, Mercado Livre e Amazon</strong> — economia de verdade pra você pagar menos todo dia.
+        </p>
+
+        <div id="heroCta" class="cta-stack">
+          <a
+            href="https://chat.whatsapp.com/C5A4Bzv5PwuIhEBPIchPu0?s=cl&p=a&iam=2"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--whatsapp"
+            data-channel="whatsapp"
+            data-placement="hero_principal"
+          >
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.6 5.95L0 24l6.33-1.66a11.87 11.87 0 0 0 5.73 1.46h.01c6.55 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.45-8.42ZM12.07 21.8h-.01a9.87 9.87 0 0 1-5.04-1.38l-.36-.21-3.76.99 1-3.66-.24-.38a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.13 1.03 7 2.9a9.83 9.83 0 0 1 2.9 7c0 5.45-4.44 9.89-9.88 9.89Zm5.42-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.48-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+            </svg>
+            <span class="btn__text">
+              <span>ENTRAR NO GRUPO VIP GRÁTIS</span>
+              <span class="btn__sub">WhatsApp Oficial • Vagas abertas agora</span>
+            </span>
+          </a>
+
+          <a
+            href="https://t.me/economizae_achadinhos"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--telegram"
+            data-channel="telegram"
+            data-placement="hero_secundario"
+          >
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0Zm5.56 8.16-1.91 9.01c-.14.64-.52.8-1.06.5l-2.93-2.16-1.41 1.36c-.16.16-.29.29-.59.29l.21-2.98 5.42-4.9c.24-.21-.05-.33-.37-.12l-6.7 4.22-2.89-.9c-.63-.2-.64-.63.13-.93l11.29-4.35c.52-.19.98.13.81.96Z"/>
+            </svg>
+            <span>Prefere Telegram? Entrar no Canal 24h</span>
+          </a>
+        </div>
+
+        <div class="hero__trust">
+          <span class="hero__trust-item"><span class="hero__trust-check">✓</span> Grupo fechado (só ofertas)</span>
+          <span class="hero__trust-item"><span class="hero__trust-check">✓</span> Pausa noturna (23h–08h)</span>
+          <span class="hero__trust-item"><span class="hero__trust-check">✓</span> Links oficiais verificados</span>
+        </div>
+      </div>
+
+      <!-- Preview Interativo do Celular -->
+      <div class="phone-showcase" aria-label="Prévia de como chegam as ofertas no grupo">
+        <div class="channel-switch" role="tablist" aria-label="Escolha o canal para ver a prévia">
+          <button type="button" class="channel-switch__btn is-active" role="tab" aria-selected="true" data-preview="whatsapp">
+            💬 Prévia WhatsApp
+          </button>
+          <button type="button" class="channel-switch__btn" role="tab" aria-selected="false" data-preview="telegram">
+            ✈️ Prévia Telegram
+          </button>
+        </div>
+
+        <div class="phone-frame">
+          <div id="phoneScreen" class="phone-screen" data-mode="whatsapp">
+            <div class="phone-header">
+              <img src="assets/logo-economizae.png" alt="" class="phone-header__avatar" width="38" height="38" />
+              <div class="phone-header__meta">
+                <div id="phoneGroupName" class="phone-header__name">Economizaê | Ofertas VIP</div>
+                <div id="phoneGroupSub" class="phone-header__sub">Grupo fechado • Só ofertas reais</div>
+              </div>
+              <span id="phoneGroupTag" class="phone-header__tag">08h–23h</span>
+            </div>
+
+            <div id="phoneChat" class="phone-chat"></div>
+
+            <div id="phoneFooterNote" class="phone-footer-note">
+              🔒 Somente administradores enviam mensagens — zero spam!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Barra de Lojas Monitoradas -->
+  <section class="stores-bar" aria-label="Lojas monitoradas">
+    <div class="container stores-bar__inner">
+      <p class="stores-bar__label">Monitoramos ofertas e cupons das maiores lojas todos os dias</p>
+      <div class="stores-pills">
+        <span class="store-pill"><span class="store-dot store-dot--shopee"></span>Shopee</span>
+        <span class="store-pill"><span class="store-dot store-dot--ml"></span>Mercado Livre</span>
+        <span class="store-pill"><span class="store-dot store-dot--amazon"></span>Amazon</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefícios -->
+  <section class="section section--tint">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__kicker">Por que entrar agora?</span>
+        <h2 class="section__title">Economize tempo e dinheiro sem ficar caçando promoção</h2>
+        <p class="section__desc">
+          A gente faz o garimpo pesado o dia inteiro e manda no seu celular só o que realmente vale a pena comprar.
+        </p>
+      </div>
+
+      <div class="benefits-grid">
+        <article class="benefit-card">
+          <div class="benefit-card__icon" aria-hidden="true">🎯</div>
+          <h3 class="benefit-card__title">Descontos Reais Garimpados</h3>
+          <p class="benefit-card__text">
+            Selecionamos achadinhos, ofertas relâmpago e cupons de verdade antes que o estoque acabe.
+          </p>
+        </article>
+
+        <article class="benefit-card">
+          <div class="benefit-card__icon" aria-hidden="true">🔕</div>
+          <h3 class="benefit-card__title">Zero Bate-Papo e Sem Spam</h3>
+          <p class="benefit-card__text">
+            O grupo é fechado só para administradores. Nada de "bom dia", correntes ou conversa paralela.
+          </p>
+        </article>
+
+        <article class="benefit-card">
+          <div class="benefit-card__icon" aria-hidden="true">🌙</div>
+          <h3 class="benefit-card__title">Respeito ao Seu Descanso</h3>
+          <p class="benefit-card__text">
+            No WhatsApp, temos pausa noturna automática das 23h às 08h para não incomodar seu sono.
+          </p>
+        </article>
+
+        <article class="benefit-card">
+          <div class="benefit-card__icon" aria-hidden="true">🛡️</div>
+          <h3 class="benefit-card__title">100% Gratuito e Seguro</h3>
+          <p class="benefit-card__text">
+            Não vendemos nada no grupo. Você clica e finaliza a compra direto no site ou app oficial da loja.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vitrine Interativa de Achadinhos -->
+  <section class="section section--white" id="exemplos">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__kicker">Exemplos de Achadinhos</span>
+        <h2 class="section__title">Veja o tipo de oferta que chega no Economizaê</h2>
+        <p class="section__desc">
+          Filtre por loja e confira alguns exemplos do que nossa equipe encontra para os membros do grupo.
+        </p>
+      </div>
+
+      <div class="filter-pills" role="group" aria-label="Filtrar exemplos por loja">
+        <button type="button" class="filter-pill is-active" data-filter="todas">Todas as lojas</button>
+        <button type="button" class="filter-pill" data-filter="shopee">Shopee</button>
+        <button type="button" class="filter-pill" data-filter="mercadolivre">Mercado Livre</button>
+        <button type="button" class="filter-pill" data-filter="amazon">Amazon</button>
+      </div>
+
+      <div id="dealsGrid" class="deals-grid"></div>
+
+      <p class="deals-disclaimer">
+        * Valores e descontos acima são exemplos ilustrativos de promoções frequentes. Como as melhores ofertas esgotam rápido, os links ao vivo são enviados direto nos grupos!
+      </p>
+    </div>
+  </section>
+
+  <!-- Comparativo WhatsApp vs Telegram -->
+  <section class="section section--tint" id="canais">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__kicker">Escolha seu canal favorito</span>
+        <h2 class="section__title">WhatsApp VIP ou Telegram 24h? Você pode entrar nos dois!</h2>
+        <p class="section__desc">
+          Ambos são 100% gratuitos. Escolha o que combina mais com a sua rotina de compras.
+        </p>
+      </div>
+
+      <div class="channels-grid">
+        <article class="channel-card channel-card--featured">
+          <span class="channel-card__badge">⭐ Mais Popular</span>
+          <h3 class="channel-card__title">Grupo VIP no WhatsApp</h3>
+          <p class="channel-card__desc">
+            Perfeito para acompanhar as melhores ofertas do dia direto no app que você já usa o tempo todo.
+          </p>
+          <ul class="channel-list">
+            <li><span class="ok">✓</span> <span>Ofertas selecionadas com foto, preço e link direto</span></li>
+            <li><span class="ok">✓</span> <span>Grupo silencioso (somente admins publicam)</span></li>
+            <li><span class="ok">✓</span> <span>Pausa noturna automática das 23h às 08h</span></li>
+            <li><span class="ok">✓</span> <span>100% grátis — entre ou saia com 1 toque</span></li>
+          </ul>
+          <div class="channel-card__action">
+            <a
+              href="https://chat.whatsapp.com/C5A4Bzv5PwuIhEBPIchPu0?s=cl&p=a&iam=2"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--whatsapp"
+              data-channel="whatsapp"
+              data-placement="card_comparativo"
+            >
+              <span>Entrar no Grupo do WhatsApp</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="channel-card">
+          <span class="channel-card__badge channel-card__badge--tg">⚡ Feed 24 Horas</span>
+          <h3 class="channel-card__title">Canal Oficial no Telegram</h3>
+          <p class="channel-card__desc">
+            Ideal para quem adora caçar ofertas de madrugada, ver o histórico completo e nunca perder um cupom.
+          </p>
+          <ul class="channel-list">
+            <li><span class="ok">✓</span> <span>Envio contínuo 24h por dia, inclusive na madrugada</span></li>
+            <li><span class="ok">✓</span> <span>Histórico completo de ofertas já postadas antes de você entrar</span></li>
+            <li><span class="ok">✓</span> <span>Não ocupa memória do seu celular com fotos</span></li>
+            <li><span class="ok">✓</span> <span>Busca rápida por produto dentro do canal</span></li>
+          </ul>
+          <div class="channel-card__action">
+            <a
+              href="https://t.me/economizae_achadinhos"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--telegram-solid"
+              data-channel="telegram"
+              data-placement="card_comparativo"
+            >
+              <span>Entrar no Canal do Telegram</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como Funciona em 3 Passos -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__kicker">Super simples</span>
+        <h2 class="section__title">Comece a economizar em menos de 10 segundos</h2>
+      </div>
+
+      <div class="steps-grid">
+        <article class="step-card">
+          <div class="step-num">1</div>
+          <div>
+            <h3>Toque no botão verde</h3>
+            <p>Clique em "Entrar no Grupo VIP Grátis" para abrir o convite oficial no seu WhatsApp.</p>
+          </div>
+        </article>
+
+        <article class="step-card">
+          <div class="step-num">2</div>
+          <div>
+            <h3>Confirme sua entrada</h3>
+            <p>Sem cadastro, sem e-mail e sem taxa. Você já entra pronto para receber os achadinhos.</p>
+          </div>
+        </article>
+
+        <article class="step-card">
+          <div class="step-num">3</div>
+          <div>
+            <h3>Aproveite os descontos</h3>
+            <p>Gostou de uma oferta? Clique no link oficial da loja e garanta antes que o cupom acabe!</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Perguntas Frequentes -->
+  <section class="section section--tint" id="faq">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__kicker">Dúvidas Frequentes</span>
+        <h2 class="section__title">Tudo o que você precisa saber antes de entrar</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span>Preciso pagar alguma coisa para participar do grupo?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer__inner">
+              Não! O Economizaê é <strong>100% gratuito</strong> hoje e sempre. Nosso trabalho é mantido pelas comissões pagas pelas próprias lojas parceiras, sem nenhum custo extra para você.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span>O grupo fica cheio de conversas travando o celular?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer__inner">
+              De jeito nenhum! O grupo é fechado apenas para os administradores postarem ofertas e cupons selecionados. Além disso, o WhatsApp fica em silêncio automático das 23h às 08h.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span>É seguro comprar pelos links enviados no Economizaê?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer__inner">
+              Sim! Nós divulgamos apenas links que levam direto para as grandes lojas oficiais (Shopee, Mercado Livre e Amazon). Você paga e acompanha a entrega diretamente no site ou aplicativo da própria loja.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span>Qual a diferença entre o WhatsApp e o Telegram?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer__inner">
+              O <strong>WhatsApp</strong> envia ofertas selecionadas durante o dia (08h às 23h) com toda praticidade. Já o <strong>Telegram</strong> funciona 24 horas por dia, permite pesquisar ofertas antigas e mantém todo o histórico de promoções disponível assim que você entra.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span>Posso sair do grupo se não quiser mais receber ofertas?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer__inner">
+              Com certeza! Você tem liberdade total para silenciar as notificações ou sair do grupo a qualquer momento com apenas um toque.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="final-cta" id="finalCta">
+    <div class="container">
+      <div class="final-cta__box">
+        <img src="assets/logo-economizae.png" alt="Logo Economizaê" class="final-cta__logo" width="152" height="152" loading="lazy" />
+        <h2 class="final-cta__title">Não pague caro de novo. Vem economizar com a gente!</h2>
+        <p class="final-cta__desc">
+          As melhores promoções duram poucos minutos. Garanta agora sua vaga gratuita no Economizaê.
+        </p>
+
+        <div class="final-cta__actions">
+          <a
+            href="https://chat.whatsapp.com/C5A4Bzv5PwuIhEBPIchPu0?s=cl&p=a&iam=2"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--whatsapp"
+            data-channel="whatsapp"
+            data-placement="cta_final"
+          >
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.6 5.95L0 24l6.33-1.66a11.87 11.87 0 0 0 5.73 1.46h.01c6.55 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.45-8.42ZM12.07 21.8h-.01a9.87 9.87 0 0 1-5.04-1.38l-.36-.21-3.76.99 1-3.66-.24-.38a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.13 1.03 7 2.9a9.83 9.83 0 0 1 2.9 7c0 5.45-4.44 9.89-9.88 9.89Zm5.42-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.48-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+            </svg>
+            <span>QUERO ENTRAR NO WHATSAPP AGORA</span>
+          </a>
+
+          <a
+            href="https://t.me/economizae_achadinhos"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--telegram"
+            data-channel="telegram"
+            data-placement="cta_final"
+          >
+            <span>Entrar no Canal do Telegram (24h)</span>
+          </a>
+
+          <button type="button" id="btnShare" class="btn btn--ghost-light">
+            <span>🔗 Compartilhar com um amigo</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé (compatível com políticas Meta Ads / Google Ads) -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo-economizae.png" alt="Economizaê" width="46" height="46" loading="lazy" />
+        <span>Economizaê — Achadinhos e Ofertas</span>
+      </div>
+
+      <div class="footer__links">
+        <a class="footer__link" href="https://chat.whatsapp.com/C5A4Bzv5PwuIhEBPIchPu0?s=cl&p=a&iam=2" target="_blank" rel="noopener noreferrer" data-channel="whatsapp" data-placement="footer">Grupo WhatsApp</a>
+        <a class="footer__link" href="https://t.me/economizae_achadinhos" target="_blank" rel="noopener noreferrer" data-channel="telegram" data-placement="footer">Canal Telegram</a>
+        <button type="button" class="footer__link" data-modal="privacidade">Política de Privacidade</button>
+        <button type="button" class="footer__link" data-modal="termos">Termos e Aviso de Afiliado</button>
+      </div>
+
+      <p class="footer__legal">
+        © <span id="currentYear">2026</span> Economizaê — Economia de verdade pra você! Canal independente de curadoria de ofertas. Participamos de programas de afiliados; preços, cupons e disponibilidade são de responsabilidade das lojas parceiras e podem mudar sem aviso prévio. Esta página não possui vínculo oficial com WhatsApp, Meta ou Telegram.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Barra Fixa Mobile (aparece após rolar o topo) -->
+  <div id="stickyBar" class="sticky-bar" aria-hidden="true">
+    <div class="sticky-bar__inner">
+      <img src="assets/logo-economizae.png" alt="" class="sticky-bar__logo" width="40" height="40" />
+      <a
+        href="https://chat.whatsapp.com/C5A4Bzv5PwuIhEBPIchPu0?s=cl&p=a&iam=2"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn--whatsapp sticky-bar__btn"
+        data-channel="whatsapp"
+        data-placement="barra_fixa_mobile"
+      >
+        <span>Entrar no Grupo VIP Grátis →</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Modal Legal (Privacidade / Termos) -->
+  <div id="legalModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="legalModalTitle">
+    <div class="modal__card">
+      <div class="modal__head">
+        <h3 id="legalModalTitle" class="modal__title">Informações</h3>
+        <button type="button" id="legalModalClose" class="modal__close" aria-label="Fechar">×</button>
+      </div>
+      <div id="legalModalBody" class="modal__body"></div>
+    </div>
+  </div>
+
+  <!-- Toast de Feedback -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/config.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
